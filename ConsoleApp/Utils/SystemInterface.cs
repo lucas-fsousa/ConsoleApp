@@ -14,6 +14,7 @@ namespace ConsoleApp.Utils {
 
       // Controle de telas
       while(true) {
+
         if(tela_atual == TELA_HOME) {
           tela_atual = MostrarTelaInicial();
         }
@@ -22,8 +23,8 @@ namespace ConsoleApp.Utils {
           tela_atual = MostrarTelaUsuario();
         }
 
-
       }
+
     }
 
     public static int MostrarTelaUsuario() {
@@ -74,6 +75,7 @@ namespace ConsoleApp.Utils {
 
       return retorno;
     }
+    
     public static void ExcluirUsuario() {
       Console.WriteLine(" EXCLUINDO USUARIOS");
       Console.Write(" ID: ");
@@ -81,6 +83,7 @@ namespace ConsoleApp.Utils {
       Usuario.Excluir(int.Parse(Console.ReadLine()));
       Auxiliar.Esperar(" USUARIO EXCLUIDO!", 3);
     }
+    
     public static void AtualizarUsuario() {
       Console.WriteLine(" ATUALIZANDO USUARIO");
       Console.Write(" ID DO USUARIO QUE SERA ATUALIZADO: ");

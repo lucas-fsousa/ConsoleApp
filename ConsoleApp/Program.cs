@@ -4,7 +4,6 @@ namespace ConsoleApp {
     public static void Main(string[] args) {
 
       SystemInterface.IniciarInterfaces();
-
     }
 
   }
