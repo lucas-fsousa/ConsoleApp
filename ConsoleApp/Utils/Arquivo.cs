@@ -12,7 +12,7 @@ namespace ConsoleApp.Utils {
       var caminho = string.Empty;
 
       // verifica se o sistema possui alguma variavel de ambiente denominada "Ambiente" com valor "DEV"
-      var ambienteDev = Environment.GetEnvironmentVariable("Ambiente") == "DEV" ? true : false;
+      var ambienteDev = Environment.GetEnvironmentVariable("Ambiente") == "DEV";
 
       // Verifica se o ambiente é desenvolvimento ou produção
       if(ambienteDev) {
